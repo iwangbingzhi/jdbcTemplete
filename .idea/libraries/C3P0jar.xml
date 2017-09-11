@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="C3P0连接池jar包">
+    <CLASSES>
+      <root url="file://F:/javaweb类库/C3P0连接池jar包" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://F:/javaweb类库/C3P0连接池jar包" recursive="false" />
+  </library>
+</component>
