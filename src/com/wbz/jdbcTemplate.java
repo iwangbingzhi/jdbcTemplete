@@ -12,17 +12,13 @@ import java.util.List;
 /**
  * Created by 王炳智 on 2017/8/23.
  */
+//spring数据库的操作
 public class jdbcTemplate {
     public static void main(String[] args) {
         countList();
     }
     //查询返回对象list
     public static void countList(){
-
-
-
-
-
         //设置数据库信息
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("com.mysql.jdbc.Driver");
@@ -35,7 +31,7 @@ public class jdbcTemplate {
         //创建jdbcTemplate对象，设置数据源
         JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);
         String sql = "select * from user";
-        //第二个参数接口是RowMapper,需要自己写类实现借口，自己做数据的封装
+        //第二个参数接口是RowMapper,需要自己写类实现接口，自己做数据的封装
         List<User> list =  jdbcTemplate.query(sql,new MyRowMapper());
         System.out.println(list);
     }
